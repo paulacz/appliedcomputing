@@ -1,0 +1,26 @@
+Matriz
+
+nome_variavel = valor;
+nome_variavel[primeira_pos] = valor;
+.
+.                                       >>> for(i = prim_pos; i<ultima_pos+1; i++){
+                                            nome_variavel[i] = valor;
+                                            }
+.
+nome_variavel[ultima_pos] = valor;
+
+
+nome_variavel[prim_linha][prim_coluna] = valor;
+.
+.
+.
+nome_variavel[ultima_linha][ultima_coluna] = valor;
+
+>>>
+
+for(i = prim_lin; i<ultima_lin + 1; i++){
+for(j = prim_col; j<ultima_col + 1; j++){
+nome_variavel[i][j] = valor;
+  }
+}
+
