@@ -1,9 +1,9 @@
 /* IPOG - Engenharia Civil
    Paula Cruz - 02/2020
    Vetor
-   ex.4.: FaÁa um programa que leia a idade de 20 pessoas e 
+   ex.4.: Fa√ßa um programa que leia a idade de 20 pessoas e 
    armazene em um vetor, depois calcule e escreva quantas 
-   idades s„o maiores que 18.
+   idades s√£o maiores que 18.
    
 */
 
