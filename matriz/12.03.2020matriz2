@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+   float mat[3][3], soma_dp=0, soma_ds=0, media_ds=0;
+   int i, j;
+
+   for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+        printf("Valor [%i][%i]...:", i, j);scanf("%f", &mat[i][j]);
+        if (i==j){soma_dp = soma_dp + mat[i][j];}
+        if ((i+j)==2){soma_ds=soma_ds+mat[i][j];}
+    }
+    media_ds = soma_ds / 3;
+    }
+    printf("A soma da diagonal principal e ..: %.1f\n", soma_dp);
+    printf("A soma da diagonal secundaria e ...: %.1f\n", soma_ds);
+    printf("A media da diagonal secundaria e ...: %.1f\n", media_ds);
+}
