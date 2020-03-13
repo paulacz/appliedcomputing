@@ -1,0 +1,31 @@
+m = []               # Matriz
+max = None           # Armazena o maior valor
+position = (0, 0)    # Armazena a posição do maior valor
+
+# Define 4 linhas na matriz:
+for i in range(3):
+
+    # Linha da matriz:
+    linha = []
+
+    # Define 4 colunas na matriz:
+    for j in range(3):
+
+        # Lê o valor a ser inserido:
+        value = int(input("Valor da posição ({}, {}):".format(i, j)))
+
+        # Verifica se o valor é maior que o máximo atual:
+        if max is None or value > max:
+
+            # Sim, então altera o valor do máximo e de sua posição
+            max = value
+            position = (i, j)
+
+        # Adiciona o valor à linha:
+        linha.append(value)
+
+        # Adiciona a linha na matriz:
+        m.append(linha)
+
+# Exibe a posição do maior valor:
+print("O maior valor está na posição {} e vale {}".format(position, max))
