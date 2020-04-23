@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int vet[15];
+    int i=0;
+    int tamVetImpar = 0;
+    int tamVetPar = 0;
+    for(i=0;i<15;i++){
+        scanf("%d", &vet[i]);
+        if(vet[i] % 2 == 0)
+            tamVetPar++;
+        else
+          tamVetImpar++;
+    }
+    int vetPar[tamVetPar];
+    int vetImpar[tamVetImpar];
+    int j=0;
+    for(i=0;i<15;i++){
+        if(vet[i] % 2 == 0){
+            vetPar[j] = vet[i];
+            j++;
+        }
+    }
+    j = 0;
+    for(i=0;i<15;i++){
+        if(vet[i] % 2 != 0){
+            vetImpar[j] = vet[i];
+            j++;
+        }
+    }
+    printf("Vetor impar:\n");
+   for(i=0;i<tamVetImpar;i++){
+       printf("%d\n", vetImpar[i]);
+   }
+    
+   printf("Vetor par:\n");
+   for(i=0;i<tamVetPar;i++){
+       printf("%d\n", vetPar[i]);
+   }
+    
+}
