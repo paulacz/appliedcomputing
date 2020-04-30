@@ -1,0 +1,8 @@
+#Programa que calcula a soma de dois números
+
+num1 = int(input(input('numero 1...:'))
+num2 = int(input(input('numero 2...'))
+
+soma = num1 + num2
+
+print('a soma e..:', soma)
