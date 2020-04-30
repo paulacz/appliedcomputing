@@ -1,0 +1,17 @@
+# Faça um programa que leia o nome e duas notas de um aluno. 
+# Calcule e escreva: média das otas e a mensagem aprovado, se 
+# a media >= 7 ou reprovado, se a média < 7.
+
+
+nota1 = int ( input ( 'nota 1 ..:') )
+nota2 = int ( input ( 'nota 2 ..:') )
+
+media = (nota1 + nota2)/2
+
+print(' a media e..:', media)
+
+if media >= 7:
+    print('aprovado')
+
+else:
+    print('reprovado')
