@@ -1,0 +1,39 @@
+#Python
+#Computacao Aplicada
+#Paula Cruz 
+# Faça um programa em Python que leia vários números e armazene num vetor de 10 posições. Calcule e escreva: 
+#- Soma dos números
+#- Média dos números
+#- Posição onde se encontra o maior número
+#- Menor valor das posições pares
+
+numeros = []
+soma = 0
+posicao_maior = 0
+posicao_menor = 0
+maior = 0
+
+for i in range(0, 10):
+    
+    num = int(input('Digite um valor: '))
+    numeros.append(num)
+    
+    if maior < num:
+        maior = numeros [0]
+        posicao_maior = i+1
+menorPar = numeros [0]
+
+for i in range (0,10):
+
+    if((i%2) == 0):
+        if (numeros [i] > menorPar):  
+            menorPar = numeros[i]
+            posicao_menor = i
+            
+    soma = soma + numeros[i]
+
+print ('Soma: ',str(soma))   
+print ('Media: ' , str(soma/len(numeros)))
+print ('posição do Maior valor: ', str(posicao_maior))
+print ('Menor valor das posições pares: ',str(posicao_menor))
+
