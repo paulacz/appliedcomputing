@@ -1,1 +1,19 @@
+#Python
+#Computacao Aplicada
+#Paula Cruz 
+# Faça um programa em Python que leia vários pesos. Calcule a média dos pesos. Adote um Flag.
+
+
+resposta = 'SIM'
+soma = quantidade = media = 0
+while resposta in 'SIM':
+    numero = int(input('Digite o peso: '))
+    soma += numero
+    quantidade += 1 
+    
+        
+    resposta = str(input('Deseja informar outro valor ? [SIM/NAO]')).upper().strip()[0]
+
+media = soma / quantidade
+print(' A média dos pesos é {}'. format(media))
 
