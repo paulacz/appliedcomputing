@@ -1,0 +1,48 @@
+#Python
+#Computacao Aplicada
+#Paula Cruz 
+# Faça um programa em Python que leia vários números e armazene numa matriz 3 x 3. Calcule e escreva: 
+#- Soma da diagonal secundária
+#-  Média dos números da primeira linha
+#- Posição onde se encontra o menor número
+#-  Maior valor da segunda coluna
+
+
+menor_num = 0
+soma_primeiralin = 0
+posi_menor = []
+soma_diag = 0
+maior_segundacol = 0
+
+nums = [[0 for lin in range(3)] for lin in range(3)] 
+for lin in range(0, 3):
+    for col in range(0, 3):
+        
+        num = int(input('Digite um valor: '))
+        
+        nums[lin][col] = num
+        
+menor_num = nums[0][0]
+for lin in range(0, 3):
+    for col in range(0, 3):
+        
+        if nums[lin][col]> menor_num:
+            posi_menor = (lin, col)
+            menor_num = nums[lin][col]
+for lin in range(0, 3):
+    for col in range(0,3):
+        if (col == lin):
+            soma_diag = soma_diag + nums[lin][col]
+            
+for col in range(0,3):
+    soma_primeiralin = soma_primeiralin + nums[0][col]
+    
+for lin in range(0, 3):
+    if nums[lin][1] > maior_segundacol:
+        maior_segundacol = nums[lin][1]
+        
+   
+print ('Media da primeira linha: ' , str(soma_primeiralin/len(nums)))
+print ('Maior da segunda coluna: ',str(maior_segundacol))
+print ('Soma da diagonal: ', str(soma_diag))
+print ('Posição do menor numero: ', str(posi_menor))
